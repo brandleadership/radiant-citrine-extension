@@ -15,6 +15,7 @@ class CitrineExtension < Radiant::Extension
   def activate
     # admin.tabs.add "Citrine", "/admin/citrine", :after => "Layouts", :visibility => [:all]
     Page.send :include, CitrineTags
+    SiteController.class_eval { session :on }    
   end
   
   def deactivate

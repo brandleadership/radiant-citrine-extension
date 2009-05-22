@@ -1,4 +1,4 @@
-class VictorHotzGalleryPage < GalleryPage
+class CitrineGalleryPage < GalleryPage
 
   def find_gallery_by_path(slug)
 	slugs = slug.split('/')
