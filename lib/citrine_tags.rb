@@ -50,7 +50,7 @@ module CitrineTags
   end
 
   tag "gallery:items:pagination" do |tag|
-    html = '<ul>'
+    html = '<ul id="gallery-pagination-list">'
     item_counter = 1;
     gallery = find_gallery(tag)
     gallery.items.find(:all).each do |item|
